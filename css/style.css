@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #092E4B;
+}
+
+.prison {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.prison-bar-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.prison-bar {
+	width: 50%;
+	height: 100vh;
+	float: left;
+	position: relative;
+	z-index: 100;
+	transition: all 1.5s ease-out;
+}
+
+.prison-bar-left {
+	background: url(../images/prison-bars-left.jpg);
+	transform: translateX(0);
+	background-size: cover;
+}
+
+.prison-bar-right {
+	background: url(../images/prison-bars-right.jpg);
+	transform: translateX(0);
+	background-size: cover;
+}
+
+.prison-bar-left.open {
+	transform: translateX(-70%);
+	opacity: 0.5;
+}
+
+.prison-bar-right.open {
+	transform: translateX(70%);
+	opacity: 0.5;
+}
+
+.prison-bar-behind {	
+	color: white;
+	position: absolute;
+	z-index: 1;
+	left: 15%;
+	width: 70%;
+	height: 100%;
+}
+
+.prison-bar-behind > h1 {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    height: 100%;
+    text-decoration: none;
+	font-size: 4vw;
+	text-align: center;
+	text-shadow: 5px 5px #333;
+}
